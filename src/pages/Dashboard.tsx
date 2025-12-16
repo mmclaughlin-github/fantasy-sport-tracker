@@ -88,6 +88,21 @@ export default function Dashboard() {
       </header>
 
       <main className="max-w-7xl mx-auto px-4 py-8">
+        <Link
+          to="/install"
+          className="block mb-6 p-4 bg-gradient-to-r from-blue-500 to-blue-600 text-white rounded-lg shadow-md hover:shadow-lg transition-shadow"
+        >
+          <div className="flex items-center gap-3">
+            <div className="text-3xl">📱</div>
+            <div className="flex-1">
+              <h3 className="font-semibold text-lg">Install on Your Phone</h3>
+              <p className="text-sm text-blue-100">
+                Add this app to your home screen for quick access
+              </p>
+            </div>
+            <div className="text-2xl">→</div>
+          </div>
+        </Link>
         <div className="flex justify-between items-center mb-6">
           <h2 className="text-xl font-bold">Games</h2>
           {user?.is_commissioner && (

@@ -2,6 +2,7 @@ import { Routes, Route, Navigate } from 'react-router-dom';
 import { useAuthStore } from './store/authStore';
 import Login from './pages/Login';
 import Dashboard from './pages/Dashboard';
+import InstallInstructions from './pages/InstallInstructions';
 import AdminLayout from './layouts/AdminLayout';
 import RosterManagement from './pages/admin/RosterManagement';
 import ScoringRules from './pages/admin/ScoringRules';
@@ -29,6 +30,7 @@ function App() {
   return (
     <Routes>
       <Route path="/login" element={<Login />} />
+      <Route path="/install" element={<InstallInstructions />} />
 
       <Route path="/" element={
         <ProtectedRoute>
